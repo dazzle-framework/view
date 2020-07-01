@@ -1,0 +1,36 @@
+{
+    "name": "dazzlesoftware/view",
+    "type": "library",
+    "description": "Dazzle View Package",
+    "keywords": ["dazzle", "framework", "view"],
+    "homepage": "https://github.com/dazzle-framework/view",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "^7.3.0",
+        "dazzlesoftware/model": "^1.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/filesystem": "^1.0",
+        "dazzlesoftware/test": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "suggest": {
+        "dazzlesoftware/filesystem": "To use the AbstractHtmlView, install dazzlesoftware/filesystem"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\View\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\View\\UnitTests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
